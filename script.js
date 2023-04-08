@@ -109,6 +109,13 @@ function handleCardClick() {
   // Si todas las cartas han sido emparejadas, mostrar un mensaje de victoria y reiniciar el juego
   if (cardsMatched.length === cards.length) {
     setTimeout(() => {
+      const urlParams = new URLSearchParams(window.location.search);
+      let level = urlParams.get("level");
+      if (level == null) {
+        localStorage.setItem("nivelActual", "1");
+      } else {
+        localStorage.setItem("nivelActual", level);
+      }
       window.location.href = "games/page_win.html";
     }, 1000);
   }

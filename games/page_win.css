@@ -30,11 +30,12 @@ body {
   text-shadow: -4px 4px 0px #000;
 }
 
-.winner img {
+.img-win {
   max-width: 400px;
   border-radius: 188px;
   height: 320px;
   margin: 30px auto;
+  box-shadow: -5px 5px 5px green, 5px 5px 2px black;
 }
 
 .winner p {
