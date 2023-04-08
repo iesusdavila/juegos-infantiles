@@ -12,14 +12,14 @@ const cards = [
   { id: 10, value: "🥭" },
 ];
 
+const foundList = document.querySelector(".found");
+const remainingList = document.querySelector(".remaining");
 const board = document.querySelector(".board");
 const resetButton = document.querySelector(".reset");
+const button = document.querySelector("#goToNextPage");
 
 let cardsSelected = [];
 let cardsMatched = [];
-
-const foundList = document.querySelector(".found");
-const remainingList = document.querySelector(".remaining");
 
 function actualizarFrutasEncontradas() {
   const foundFruits = cardsMatched;
@@ -109,7 +109,7 @@ function handleCardClick() {
   // Si todas las cartas han sido emparejadas, mostrar un mensaje de victoria y reiniciar el juego
   if (cardsMatched.length === cards.length) {
     setTimeout(() => {
-      resetGame();
+      window.location.href = "/games/page_win.html";
     }, 1000);
   }
 }

@@ -11,6 +11,7 @@ body {
     rgba(228, 47, 67, 1) 100%
   );
   font-family: "Pacifico", Arial, sans-serif;
+  height: 100vh;
 }
 
 .game-title {
@@ -96,7 +97,6 @@ body {
 .found li,
 .remaining li {
   display: inline-block;
-  color: #1b5e20;
   font-size: 25px;
 }
 

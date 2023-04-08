@@ -1,0 +1,98 @@
+body {
+  font-family: "Pacifico", Arial, sans-serif;
+}
+
+.winner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(228, 47, 67, 1) 0%,
+    rgba(249, 65, 86, 1) 25%,
+    rgba(239, 77, 95, 1) 50%,
+    rgba(249, 65, 86, 1) 75%,
+    rgba(228, 47, 67, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.winner h2 {
+  font-size: 3em;
+  color: #9d80ff;
+  margin: 0;
+  text-shadow: -4px 4px 0px #000;
+}
+
+.winner img {
+  max-width: 400px;
+  border-radius: 188px;
+  height: 320px;
+  margin: 30px auto;
+}
+
+.winner p {
+  font-size: 2em;
+  color: #0ce112;
+  margin: 20px 0 0 0;
+  text-shadow: -1px 1px 5px #337636;
+}
+
+.btn-list {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+}
+
+.play-again-btn,
+.play-sgt-nvl-btn {
+  padding: 10px 20px;
+  color: #000;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.play-again-btn {
+  background: #a3a3a3;
+  box-shadow: -5px 5px 7px 0px rgb(114 112 112);
+}
+
+.play-sgt-nvl-btn {
+  background: #4caf50;
+  box-shadow: -5px 5px 7px 0px rgb(60 139 63);
+}
+
+.play-again-btn img,
+.play-sgt-nvl-btn img {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+}
+
+.play-again-btn:hover {
+  background: #202020;
+  color: #fff;
+}
+
+.play-sgt-nvl-btn:hover {
+  background: #2d692f;
+  color: #fff;
+}
