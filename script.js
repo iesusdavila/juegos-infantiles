@@ -109,7 +109,7 @@ function handleCardClick() {
   // Si todas las cartas han sido emparejadas, mostrar un mensaje de victoria y reiniciar el juego
   if (cardsMatched.length === cards.length) {
     setTimeout(() => {
-      window.location.href = "/games/page_win.html";
+      window.location.href = "games/page_win.html";
     }, 1000);
   }
 }
